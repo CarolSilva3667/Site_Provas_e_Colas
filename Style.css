@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  transform: scale(1.05);
+}
+
+
+body.inicio {
+  background-color: #fafafa;
+  color: #333;
+}
+
+body.inicio header {
+  background-color: #ffe0f0;
+  color: #6a1b9a;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #6a1b9a;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #ad1457;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #c2185b;
+}
+
+.botao, .botao-voltar {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #550303;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  transition: background 0.3s;
+}
+
+.botao:hover, .botao-voltar:hover {
+  background-color: #000;
+}
+
+body.menu {
+  background: linear-gradient(135deg, #fafafa, #e0e0e0);
+}
+body.menu header {
+  background-color: #424242;
+}
+.botoes-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+body.filosofia {
+  background-color: #fce4ec;
+  color: #880e4f;
+}
+
+body.filosofia header {
+  background-color: #f8bbd0;
+}
+
+body.filosofia nav a {
+  color: #ad1457;
+}
+
+body.filosofia nav a:hover {
+  background-color: #ad1457;
+  color: #fff;
+}
+
+.filosofia-botao {
+  background-color: #ad1457;
+}
+.filosofia-botao:hover {
+  background-color: #880e4f;
+  transform: scale(1.05);
+}
+.filosofia-botao {
+  background-color: #ad1457;
+  box-shadow: 0 0 8px rgba(173, 20, 87, 0.3);
+  transition: all 0.3s ease;
+}
+.filosofia-botao:hover {
+  background-color: #880e4f;
+  transform: scale(1.07);
+  box-shadow: 0 0 15px rgba(136, 14, 79, 0.6);
+}
+
+
+body.matematica {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+body.matematica header {
+  background-color: #bbdefb;
+}
+
+body.matematica nav a {
+  color: #1565c0;
+}
+
+body.matematica nav a:hover {
+  background-color: #1565c0;
+  color: #fff;
+}
+
+.matematica-botao {
+  background-color: #1565c0;
+}
+.matematica-botao:hover {
+  background-color: #0d47a1;
+  transform: scale(1.05);
+}
+.matematica-botao {
+  background-color: #1565c0;
+  box-shadow: 0 0 8px rgba(21, 101, 192, 0.3);
+  transition: all 0.3s ease;
+}
+.matematica-botao:hover {
+  background-color: #0d47a1;
+  transform: scale(1.07);
+  box-shadow: 0 0 15px rgba(13, 71, 161, 0.6);
+}
+
+
+body.quimica {
+  background-color: #e0f7e9;
+  color: #2e7d32;
+}
+
+body.quimica header {
+  background-color: #c8e6c9;
+}
+
+body.quimica nav a {
+  color: #1b5e20;
+}
+
+body.quimica nav a:hover {
+  background-color: #1b5e20;
+  color: #fff;
+}
+
+.quimica-botao {
+  background-color: #2e7d32;
+}
+.quimica-botao:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
+
+.quimica-botao {
+  background-color: #2e7d32;
+  box-shadow: 0 0 8px rgba(46, 125, 50, 0.3);
+  transition: all 0.3s ease;
+}
+.quimica-botao:hover {
+  background-color: #1b5e20;
+  transform: scale(1.07);
+  box-shadow: 0 0 15px rgba(27, 94, 32, 0.6);
+}
+
+
+section {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+blockquote {
+  border-left: 4px solid currentColor;
+  padding-left: 10px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.8;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.icone {
+  width: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+}
